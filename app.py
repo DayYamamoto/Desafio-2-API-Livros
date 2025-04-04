@@ -23,7 +23,7 @@ init_db()
 
 @app.route('/') 
 def home_page():
-    return '<h2> Pagina inicial'
+    return render_template('index.html')
     # descrever API ou colocar um indice/menu
 
 @app.route('/doar', methods=['POST'])
